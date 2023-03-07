@@ -1,0 +1,54 @@
+.main-container{
+  width: 1000px;
+  height: 750px;
+  margin-left: 12%;
+  text-align: center;
+}
+
+.conteudo-container{
+  margin-top: 100px;
+}
+
+.conteudo-container h1{
+  font-family:'Times New Roman', Times, serif;
+  font-weight:lighter;
+  font-size: 60px;
+  margin: 10px;
+}
+
+.conteudo-container p{
+  font-family:'Times New Roman', Times, serif;
+  font-weight: 100;
+  font-size: 18px;
+}
+
+.conteudo-container .texto-menor{
+  font-family:'Times New Roman', Times, serif;
+  font-weight: 100;
+  margin: 5px;
+  font-size: 16px;
+}
+
+hr{
+  width: 80%;
+  margin-left: 10%;
+  margin-top: 20px;
+}
+
+.div-texto{
+  width: 45%;
+  display: inline-block;
+  margin: 10px;
+}
+
+.div-texto h3{
+  font-family:'Times New Roman', Times, serif;
+  text-align: left;
+  margin-bottom: 10px;
+}
+
+.div-texto p{
+  text-align: left;
+  font-size: 16px;
+}
+
