@@ -59,6 +59,7 @@ console.log(getMateriasProfessores([nathan, alan]));
 //Exercicio 11:
 function getProfessorTypescript(profs:Professor[]): Professor{
 
-    return profs.filter(prof => prof.materias.includes(Materias.typescript)).find(p => p.nome)!
+    // return profs.filter(prof => prof.materias.includes(Materias.typescript)).find(p => p.nome)!
+    return profs.find(prof => prof.materias.includes(Materias.typescript))!;
 }
 console.log(getProfessorTypescript([nathan, alan]));
