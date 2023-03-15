@@ -1,4 +1,3 @@
-import { UserOrClassroom } from './union';
 export type StringOrBoolean = string | boolean;
 
 let strOrBool: StringOrBoolean;
