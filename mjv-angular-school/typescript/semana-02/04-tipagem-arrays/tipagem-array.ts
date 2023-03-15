@@ -1,4 +1,4 @@
-const professores: Array<string> = [
+const professoresSchool: Array<string> = [
     "Alan",
     "Nathan"
 ]

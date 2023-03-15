@@ -12,7 +12,7 @@ interface TemMateria {
     materias: string[];
 }
 
-class Professor extends UserDevSchool implements TemMateria {
+class ProfessorSchool extends UserDevSchool implements TemMateria {
     materias: string[];
 
     constructor(id:string, name:string, materias:string[]){
@@ -21,8 +21,8 @@ class Professor extends UserDevSchool implements TemMateria {
     }
 }
 
-const professor = new Professor("123", "Alan", ['Java','Angular']);
+const professor = new ProfessorSchool("123", "Alan", ['Java','Angular']);
 
-function test(user: Professor){
+function test(user: ProfessorSchool){
     
 }
