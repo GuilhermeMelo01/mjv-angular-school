@@ -1,6 +1,18 @@
 .main-content{
-  background-color: red;
   min-height: 585px;
   height: 100%;
   margin: 0 100px;
+  padding-top: 30px;
+}
+
+.main-content h3{
+  color: rgb(78, 105, 190);
+  text-align: center;
+  font-size: 64px;
+}
+
+.main-content p{
+  color: black;
+  font-size: 20px;
+  margin: 30px 10px;
 }
