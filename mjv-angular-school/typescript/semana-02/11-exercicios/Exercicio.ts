@@ -59,8 +59,6 @@ console.log(getMateriasProfessores([nathan, alan]));
 
 //Exercicio 11: Faça uma função que receba um argumento de array de Professores e retorne o primeiro Professor encotrado que dê aula de Typesrcipt
 function getProfessorTypescript(profs:Professor[]): Professor{
-
-    // return profs.filter(prof => prof.materias.includes(Materias.typescript)).find(p => p.nome)!
     return profs.find(prof => prof.materias.includes(Materias.typescript))!;
 }
 console.log(getProfessorTypescript([nathan, alan]));
