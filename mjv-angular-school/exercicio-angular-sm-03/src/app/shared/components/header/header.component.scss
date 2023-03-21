@@ -5,8 +5,18 @@
   height: 100px;
 }
 
+.main-header h3{
+  width: 100%;
+  text-align: center;
+  font-size: 24px;
+}
+
+.main-header a{
+  text-decoration: none;
+  color: black;
+}
+
 .main-header div{
-  // background-color: green;
   align-items: center;
   align-content: center;
   display: flex;
@@ -15,67 +25,56 @@
 }
 
 .main-header .div-logo{
-  // background-color: red;
-  width: 250px;
-  margin-left: 20px;
+  width: 200px;
+  padding-top: 20px;
+  margin-right: 100px;
+  text-align: center;
+  display: inline-block;
+}
+
+.div-logo img{
+  width: 64px;
+  height: 64px;
 }
 
 .main-header .div-sobre{
-  // background-color: blue;
   width: 100px;
   margin-left: 80px;
 }
 
-.main-header a{
-  text-decoration: none;
-  color: black;
-}
-
 .main-header .div-blog{
-  // background-color: yellow;
   width: 100px;
   margin-right: 80px;
   margin-left: 40px;
 }
 
 .main-header .div-servico{
-  // background-color: yellow;
   width: 100px;
   margin-left: 20px;
   margin-right: 20px;
 }
 
 .main-header .div-membro{
-  // background-color: blue;
   width: 100px;
   margin-right: 20px;
   margin-left: 40px;
-}
-
-.main-header h3{
-  width: 100%;
-  text-align: center;
-  font-size: 24px;
 }
 
 .main-header .div-login{
   width: 150px;
   padding-left: 80px;
   margin-left: 150px;
+  padding-bottom: 7px;
 }
 
 .div-login h3{
+  color: #723887;
   text-align: center;
   width: 60px;
   margin-right: 5px;
 }
 
-.div-logo img{
-  width: 80px;
-  height: 50px;
-}
-
 .div-login img{
-  width: 30px;
-  height: 30px;
+  width: 26px;
+  height: 26px;
 }
