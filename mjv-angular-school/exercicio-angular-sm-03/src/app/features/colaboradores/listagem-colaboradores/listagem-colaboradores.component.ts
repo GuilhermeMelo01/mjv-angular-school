@@ -46,7 +46,25 @@ export class ListagemColaboradoresComponent implements OnInit{
       nome: "Gaules",
       salario: 12000.00,
       cargo: "Streamer"
-    }
+    },
+    {
+      id: 6,
+      nome: "Natalia",
+      salario: 6000.00,
+      cargo: "QA"
+    },
+    {
+      id: 7,
+      nome: "Matheus",
+      salario: 2000.00,
+      cargo: "Garçom"
+    },
+    {
+      id: 8,
+      nome: "Nathan",
+      salario: 12000.00,
+      cargo: "Desenvolvedor Angular"
+    },
   ]
 
   ngOnInit(): void {
