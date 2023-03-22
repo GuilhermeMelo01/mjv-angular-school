@@ -1,4 +1,22 @@
-div{
-  height: 600px;
+.main-listagem{
   background-color: #723887;
+  color: white;
+  min-height: 600px;
+  height: 100%;
+  padding: 10px 10px 0 10px;
+}
+
+.main-listagem h2 {
+  text-align: center;
+  font-size: 40px;
+  margin-bottom: 10px;
+}
+
+.content-listagem {
+  background-color: red;
+}
+
+.content-listagem img {
+  width: 100px;
+  height: 100px;
 }
