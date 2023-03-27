@@ -19,6 +19,6 @@ function checkResult(requestState: RequestState){
     if(requestState.success){
         console.log(requestState.people);
     }else{
-        console.log(requestState.erroMessage);
+        console.log(requestState.erroMessage); 
     }
 }
