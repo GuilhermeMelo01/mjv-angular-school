@@ -1,14 +1,27 @@
 <div class="main-listagem">
   <h2>{{titulo}}</h2>
-  <div class="content-listagem">
-    <div class="block-listagem" *ngFor="let tempColaborador of colaboradores">
+  <div class="block-listagem" *ngFor="let tempColaborador of colaboradores">
+    <div class="content-listagem">
       <div class="block-imagem">
         <img src="assets/placeholder-colaborador.png">
       </div>
       <div>Id: {{tempColaborador.id}}</div>
       <div>Nome: {{tempColaborador.nome}}</div>
       <div>Salario: {{tempColaborador.salario}}</div>
+       <!-- Diminuição de 15% do salarios acima ou igual de 4000 e aumento de 10% no salarios abaixo de 4000-->
+      <div *ngIf="tempColaborador.salario >= 4000">
+        <div>Salario recebido: {{getColaboradorSalarioComDesconto(tempColaborador.salario)}}</div>
+      </div>
+      <div *ngIf="tempColaborador.salario < 4000">
+        <div>Salario recebido: {{getColaboradorSalarioComDesconto(tempColaborador.salario)}}</div>
+      </div>
       <div>Cargo: {{tempColaborador.cargo}}</div>
+      <div>
+        <p [ngClass]="{ 'colaborador-ativo': tempColaborador.ativo, 'ex-colaborador':
+          !tempColaborador.ativo}">
+            {{tempColaborador.ativo ? 'Colaborador Ativo' : 'Ex-Colaborador' }}
+        </p>
+      </div>
     </div>
   </div>
 </div>
