@@ -6,15 +6,16 @@ import { SellModule } from './features/sell/sell.module';
 import { SharedModule } from "./shared/shared.module";
 
 @NgModule({
-    declarations: [
-        AppComponent,
-    ],
-    providers: [],
-    bootstrap: [AppComponent],
-    imports: [
-        BrowserModule,
-        SellModule,
-        SharedModule
-    ]
+  declarations: [
+    AppComponent,
+  ],
+  imports: [
+    BrowserModule,
+    SellModule,
+    SharedModule
+  ],
+  providers: [],
+  bootstrap: [AppComponent],
+
 })
 export class AppModule { }
