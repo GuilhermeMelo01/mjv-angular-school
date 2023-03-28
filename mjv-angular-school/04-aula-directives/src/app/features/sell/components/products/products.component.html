@@ -1,0 +1,20 @@
+<h1>{{titulo}}</h1>
+
+<div *ngFor="let tempProduct of produtos">
+  <div class="card-produto">
+    <p (click)="clicouTag()">Descrição do produto: {{ tempProduct.descricao }}</p>
+    <p style="width: 300px;" (mouseenter)="PassouMouse()">Preço: {{ tempProduct.preco }}</p>
+    <p>Quantidade: {{ tempProduct.quantidade }}</p>
+    <p>Preço com desconto: {{ precoComDesconto(tempProduct.preco) }}</p>
+    <img src="{{ tempProduct.image }}" width="400px" height="250px">
+    <p [ngClass]="{'em-estoque': tempProduct.disponivel, 'falta-estoque': !tempProduct.disponivel}">{{ tempProduct.disponivel ? 'Em estoque' : 'Produto em falta' }}</p>
+    <br>
+    <input type="text" (keyup)="pressionouTecla($event)">
+    <br>
+    <button (click)="obterPrecoDesconto()">Obter desconto de 10%</button>
+  </div>
+</div>
+<br>
+<button (click)="comprar()">Comprar</button>
+<hr>
+<button (click)="exibirProdutoSimNao()">Exibir Produto</button>
