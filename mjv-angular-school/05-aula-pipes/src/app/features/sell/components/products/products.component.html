@@ -1,10 +1,10 @@
 <h1>{{titulo}}</h1>
-
+<h3>Produtos disponiveis até a data: {{dataHoje | date: "dd/MM/yyyy"}}</h3>
 <div>
   <p (click)="clicouTag()">Descrição do produto: {{ produto.descricao }}</p>
-  <p style="width: 300px;" (mouseenter)="PassouMouse()">Preço: {{ produto.preco}}</p>
+  <p style="width: 300px;" (mouseenter)="PassouMouse()">Preço: {{ produto.preco | currency: 'BRL' }}</p>
   <p>Quantidade: {{ produto.quantidade }}</p>
-  <p>Preço com desconto: {{ precoComDesconto(produto.preco) }}</p>
+  <p>Preço com desconto: {{ precoComDesconto(produto.preco) | currency: 'BRL' }}</p>
   <img src="{{ produto.img }}" width="400px" height="250px">
   <br>
   <input type="text" (keyup)="pressionouTecla($event)">
