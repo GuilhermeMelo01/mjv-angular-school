@@ -7,7 +7,9 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ProductsComponent implements OnInit {
 
-  titulo = "Tela de produtos!"
+  titulo = "Tela de produtos!";
+
+  telefone = "11991085421";
 
   dataHoje = new Date();
 
